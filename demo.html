@@ -1,0 +1,110 @@
+<head>
+  <title>demo</title>
+</head>
+
+<body>
+  <div class="page-head">
+      <h2>Forms and Wizard Demos</h2>
+  </div>
+  <div class="cl-mcont">
+    <div class="row" style="border-bottom: 1px darkgray dotted;">
+
+      <div class="col-sm-6 col-md-6">
+          <div class="block-flat">
+            <div class="header">
+              <h3>Submit Form</h3>
+            </div>
+            <div class="content">
+            {{> form}}
+            </div>
+          </div>
+      </div>
+
+      <div class="col-sm-6 col-md-6">
+          <div class="block-flat">
+            <div class="header">
+              <h3>Edit Form</h3>
+            </div>
+            <div class="content">
+            {{> editor}}
+            </div>
+          </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-6 col-sm-6 fuelux">
+        <div class="block-flat">
+          <div class="header">
+            <h3>Submit Wizard</h3>
+          </div>
+          {{> wizard}}
+        </div>
+      </div>
+
+    <div class="col-sm-6 col-md-6">
+        <div class="block-flat">
+          <div class="header">
+            <h3>Edit Wizard</h3>
+          </div>
+          <div class="content">
+          {{> wizardEditor}}
+          </div>
+        </div>
+    </div>
+
+    </div>
+
+  </div>
+</body>
+
+<template name="form">
+
+    {{> pushForm seed }}
+
+</template>
+
+<template name="editor">
+    <div  style="border: 1px darkgray dotted; padding: 20px; margin 20px; height: 200px; overflow-y: scroll;">
+      <h4>Select document from collection to edition</h4>
+      <ul>
+        {{#each userCollection}}
+          <div class="list-group">
+            <a class="list-group-item">
+              <h4 class="list-group-item-heading">{{this._id}}</h4>
+              <p class="list-group-item-text">{{documentToString this}}</p>
+            </a>
+          </div>
+        {{/each}}
+      </ul>
+    </div>
+    {{> pullForm seed }}
+
+</template>
+
+<template name="wizard">
+
+    {{> pushWizard seed }}
+
+</template>
+
+<template name="wizardEditor">
+  <div style="border: 1px darkgray dotted; padding: 20px; margin 20px; height: 200px; overflow-y: scroll;">
+    <h4>Select document from collection to edition</h4>
+    <ul>
+      {{#each userCollection}}
+        <div class="list-group">
+          <a class="list-group-item">
+            <h4 class="list-group-item-heading">{{this._id}}</h4>
+            <p class="list-group-item-text">{{documentToString this}}</p>
+          </a>
+        </div>
+      {{/each}}
+    </ul>
+  </div>
+  <div class="fuelux" style="margin-top: 20px;">
+    {{> pullWizard seed }}
+  </div>
+</template>

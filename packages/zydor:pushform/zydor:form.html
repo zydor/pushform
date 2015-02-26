@@ -1,0 +1,48 @@
+
+<template name="pushForm">
+  <div class="pushform" id="{{getFormId}}">
+    {{> UI.dynamic template=form data=input}}
+    <button class="btn btn-primary" id="pushFormSubmit">Submit</button>
+    <div class="pushform-notyfication alert"></div>
+  </div>
+</template>
+
+
+<template name="pullForm">
+    <div class="pullform" style="position: relative;" id="{{getFormId}}">
+      <div class="pullform-notyfication"></div>
+      {{> UI.dynamic template=form data=input}}
+      <button class="btn btn-primary" id="pullFormSubmit">Update</button>
+      <div class="pushform-notyfication alert"></div>
+      <div class="pullform-overlay" id="notyfication-{{getFormId}}">
+        <div class="pullform-inner-wrapper">
+          <div class="pullform-preloader"></div>
+          loading data
+        </div>
+      </div>
+    </div>
+</template>
+
+
+<template name="pushWizard">
+  <div class="pushwizard" id="{{getFormId}}">
+    {{> UI.dynamic template=navi}}
+    {{> UI.dynamic template=step data=input}}
+    <div class="pushform-notyfication alert"></div>
+  </div>
+</template>
+
+
+<template name="pullWizard">
+  <div class="pullwizard"  style="position: relative;"  id="{{getFormId}}">
+    {{> UI.dynamic template=navi}}
+    {{> UI.dynamic template=step data=input}}
+    <div class="pushform-notyfication alert"></div>
+    <div class="pullform-overlay" id="notyfication-{{getFormId}}">
+      <div class="pullform-inner-wrapper">
+        <div class="pullform-preloader"></div>
+        loading data
+      </div>
+    </div>
+  </div>
+</template>

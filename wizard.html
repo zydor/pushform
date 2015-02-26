@@ -1,0 +1,206 @@
+
+
+<template name="wizardNavi">
+
+  <div class="wizard wizard-ux">
+    <ul class="steps">
+      <li class="wizard-step">Step 1<span class="chevron"></span></li>
+      <li class="wizard-step">Step 2<span class="chevron"></span></li>
+      <li class="wizard-step">Step 3<span class="chevron"></span></li>
+    </ul>
+  </div>
+
+</template>
+
+<template name="wizardStep1">
+
+  <div class="step-content">
+    <form class="form-horizontal group-border-dashed" >
+      <div class="step-pane active" id="step1">
+        <div class="form-group no-padding">
+          <div class="col-sm-7">
+            <h3 class="hthin">User Info</h3>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>User Name</label>
+          <input type="text" name="username" placeholder="Enter user name" class="form-control" >
+        </div>
+        <div class="form-group">
+          <label>Email address</label>
+          <input type="email" name="email" placeholder="Enter email" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input name="password" type="password" placeholder="Password" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Repeat Password</label>
+          <input name="repPassword" type="password" placeholder="Password" class="form-control">
+        </div>
+      </div>
+
+    </form>
+        <button class="btn btn-default">Cancel</button>
+        <button class="btn btn-primary wizard-next">Next Step <i class="fa fa-caret-right"></i></button>
+  </div>
+
+</template>
+
+<template name="wizardStep2">
+
+        <div class="step-content">
+            <form class="form-horizontal group-border-dashed">
+              <div class="step-pane active" id="step2">
+                <div class="form-group">
+                  <label>First Name</label>
+                  <input type="text" name="firstName" placeholder="Enter user name" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Sur Name</label>
+                  <input type="text" name="surName" placeholder="Enter user name" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Sex</label>
+                  <select class="form-control" name="sex">
+                    <option>select...</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+            <button class="btn btn-default wizard-previous"><i class="fa fa-caret-left"></i> Previous</button>
+            <button class="btn btn-primary wizard-next">Next Step <i class="fa fa-caret-right"></i></button>
+          </div>
+
+</template>
+
+<template name="wizardStep3">
+
+        <div class="step-content">
+            <form class="form-horizontal group-border-dashed">
+              <div class="step-pane active" id="step3">
+                <div class="form-group">
+                  <label>City</label>
+                  <input type="text" name="city" placeholder="Enter user name" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Suburb</label>
+                  <input type="text" name="suburb" placeholder="Enter user name" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Street</label>
+                  <input type="text" name="street" placeholder="Enter user name" class="form-control">
+                </div>
+              </div>
+            </form>
+            <button class="btn btn-default wizard-previous"><i class="fa fa-caret-left"></i> Previous</button>
+            <button class="btn btn-success wizard-next"><i class="fa fa-check"></i> Complete</button>
+          </div>
+
+</template>
+
+
+
+
+<template name="ewizardNavi">
+
+  <div class="wizard wizard-ux">
+    <ul class="steps">
+      <li class="wizard-step">Step 1<span class="chevron"></span></li>
+      <li class="wizard-step">Step 2<span class="chevron"></span></li>
+      <li class="wizard-step">Step 3<span class="chevron"></span></li>
+    </ul>
+  </div>
+
+</template>
+
+<template name="ewizardStep1">
+
+  <div class="step-content">
+    <form class="form-horizontal group-border-dashed" >
+      <div class="step-pane active" id="step1">
+        <div class="form-group no-padding">
+          <div class="col-sm-7">
+            <h3 class="hthin">User Info</h3>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>User Name</label>
+          <input type="text" name="username" placeholder="Enter user name" class="form-control" >
+        </div>
+        <div class="form-group">
+          <label>Email address</label>
+          <input type="email" name="email" placeholder="Enter email" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Password</label>
+          <input name="password" type="password" placeholder="Password" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Repeat Password</label>
+          <input name="repPassword" type="password" placeholder="Password" class="form-control">
+        </div>
+      </div>
+
+    </form>
+        <button class="btn btn-default">Cancel</button>
+        <button class="btn btn-primary wizard-next">Next Step <i class="fa fa-caret-right"></i></button>
+  </div>
+
+</template>
+
+<template name="ewizardStep2">
+
+        <div class="step-content">
+            <form class="form-horizontal group-border-dashed">
+              <div class="step-pane active" id="step2">
+                <div class="form-group">
+                  <label>First Name</label>
+                  <input type="text" name="firstName" placeholder="Enter user name" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Sur Name</label>
+                  <input type="text" name="surName" placeholder="Enter user name" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Sex</label>
+                  <select class="form-control" name="sex">
+                    <option>select...</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                  </select>
+                </div>
+              </div>
+            </form>
+            <button class="btn btn-default wizard-previous"><i class="fa fa-caret-left"></i> Previous</button>
+            <button class="btn btn-primary wizard-next">Next Step <i class="fa fa-caret-right"></i></button>
+          </div>
+
+</template>
+
+<template name="ewizardStep3">
+
+        <div class="step-content">
+            <form class="form-horizontal group-border-dashed">
+              <div class="step-pane active" id="step3">
+                <div class="form-group">
+                  <label>City</label>
+                  <input type="text" name="city" placeholder="Enter user name" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Suburb</label>
+                  <input type="text" name="suburb" placeholder="Enter user name" class="form-control">
+                </div>
+                <div class="form-group">
+                  <label>Street</label>
+                  <input type="text" name="street" placeholder="Enter user name" class="form-control">
+                </div>
+              </div>
+            </form>
+            <button class="btn btn-default wizard-previous"><i class="fa fa-caret-left"></i> Previous</button>
+            <button class="btn btn-success wizard-next"><i class="fa fa-check"></i> Update</button>
+          </div>
+
+</template>
